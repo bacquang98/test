@@ -134,6 +134,7 @@ public class UnderlineController : MonoBehaviour, IPointerClickHandler
         _inputField.text = _underlineModel.text;
         _underlineStart = _underlineModel.underlineStart;
         _underlineEnd = _underlineModel.underlineEnd;
+        _text.ForceMeshUpdate();
         
         if (!_underlineModel.isUnderlining && !_underlineModel.isUnderliningTwice)
             return;
